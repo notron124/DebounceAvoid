@@ -1,11 +1,5 @@
 #include "debounceAvoid.h"
 
-/*Header with your flags, we need KEY_READY flags*/
-#include "common.h"
-
-/*Header with your global variables, for KEY_READY flags, SND macro*/
-#include "glob.h"
-
 /*Header with ports definition, we need SND_ON/OFF macro*/
 #include "port.h"
 
