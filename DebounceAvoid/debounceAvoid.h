@@ -26,11 +26,11 @@ extern uint8_t keyCode;
 
 extern volatile uint8_t commonKeyFlags;
 
-/*#define F_KEY_READY     0x01
+#define F_KEY_READY     0x01
 
 #define SET_KEY_READY   commonKeyFlags |= F_KEY_READY
 #define RESET_KEY_READY commonKeyFlags &= ~F_KEY_READY
-#define KEY_READY       (commonKeyFlags & F_KEY_READY)*/
+#define KEY_READY       (commonKeyFlags & F_KEY_READY)
 
 
 
