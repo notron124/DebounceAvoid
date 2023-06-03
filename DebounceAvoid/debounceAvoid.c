@@ -13,7 +13,7 @@ uint16_t keyFlags;
 uint16_t autorepeatFlags;
 uint8_t keyCode;
 
-uint8_t commonKeyFlags;
+volatile uint8_t commonKeyFlags;
 
 void DebounceAvoid(struct Key_TypeDef *keyx)
 {
