@@ -24,7 +24,7 @@ struct Key_TypeDef
 extern uint16_t autorepeatFlags;
 extern uint8_t keyCode;
 
-extern uint8_t commonKeyFlags;
+extern volatile uint8_t commonKeyFlags;
 
 /*#define F_KEY_READY     0x01
 
