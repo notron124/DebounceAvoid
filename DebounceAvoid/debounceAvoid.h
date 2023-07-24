@@ -9,9 +9,7 @@ struct Key_TypeDef
    GPIO_TypeDef *GPIOx;
    uint16_t pin;
    uint16_t counter;
-   uint8_t shortPressDelay;
-   uint16_t longPressDelay;
-   uint8_t ID;
+   uint8_t shortPressID;
    uint8_t longPressID;
    struct {
       uint8_t autorepeat : 1;
@@ -19,9 +17,13 @@ struct Key_TypeDef
    } flags;
 };
 
+struct Keys_Properties
+{
+   uint8_t shortPressDelay;
+   uint16_t longPressDelay;
+   uint8_t autorepeatSpeed;
+};
 
-
-extern uint16_t autorepeatFlags;
 extern uint8_t keyCode;
 
 extern volatile uint8_t commonKeyFlags;
@@ -34,6 +36,6 @@ extern volatile uint8_t commonKeyFlags;
 
 
 
-void DebounceAvoid(struct Key_TypeDef *keyx);
+void DebounceAvoid(struct Key_TypeDef *keyx, struct Keys_Properties *keysProperties);
 
 #endif
